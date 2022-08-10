@@ -9,8 +9,10 @@ margin: 0px;
     background-color: gray;
 }
 .left{
-    
+    display: flex;
+    justify-content:last baseline;
 }
 .right{
+font-display: flex;
 
 }
