@@ -263,14 +263,15 @@
 
 <div class="footer">
 <h4>Copyright © 2022 all rights reserved</h4>
-<button onclick="topfunction()" id="btn" title="Go to top">Top</button>
+<!-- <button onclick="topfunction()" id="btn" title="Go to top">Top</button> -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </div>
 </div>
 
 
 
 <!-- button -->
-<script>
+<!-- <script>
 var mybutton = document.getElementById("btn");
   
 window.onscroll = function() {scrollFunction()};
@@ -287,27 +288,33 @@ function topFunction() {
 document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
 }
-</script>
+</script> -->
 
+<script>
+   
+    var mybutton = document.getElementById("myBtn");
+    
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
 
 
 
 <!-- navbar -->
-<script>
-// window.onscroll = function() {myFunction()};
-  
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-  
-function myFunction() {
-if (window.pageYOffset >= sticky) {
-navbar.classList.add("sticky")
-} else {
-navbar.classList.remove("sticky");
-}
-}
-</script>
-  
+
 
 
 </body>

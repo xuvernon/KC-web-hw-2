@@ -165,7 +165,8 @@ h1{
 
   .dropdown:hover .dropdown-content {display: block;}
 
-  #btn{
+  
+   #myBtn {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -174,12 +175,13 @@ h1{
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: red;
-    color: white;
+    background-color: #a20026;
+    color: #edf2f4;
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
-   }
-   #btn:hover{
-      background-color: #7f889a;
-   }
+  }
+  
+  #myBtn:hover {
+    background-color: #7f889a;
+  }
