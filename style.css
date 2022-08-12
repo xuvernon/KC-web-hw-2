@@ -7,7 +7,7 @@ background-color: #575e69;
 .header{
     width:100%;
     height:150px;
-    background-color: #a20026;
+    background-color:#a20026;
     color: #edf2f4;
     display: flex;
     justify-content: space-between;
@@ -184,4 +184,7 @@ h1{
   
   #myBtn:hover {
     background-color: #7f889a;
+  }
+  html{
+    scroll-behavior: smooth;
   }
