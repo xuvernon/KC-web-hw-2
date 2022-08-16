@@ -120,6 +120,7 @@ h1{
     background-color: #7f889a;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 100%;
+    z-index: 1;
   }
   
   #navbar a {
@@ -137,12 +138,12 @@ h1{
   
 
   
-  .sticky {
+   .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-  }
-  
+  } 
+   
   
 
   .dropdown {
