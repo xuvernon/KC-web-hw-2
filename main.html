@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./pic/pop.gif">
 </head>
-<body>
+<body id="top">
    
 <div class="header">
 
@@ -80,6 +80,7 @@
 </div>
 </div>
 
+  
 <div class="flip-card">
 <div class="flip-card-inner">
 <div class="flip-card-front">
@@ -256,6 +257,10 @@
 </div>      
 </div>
 
+
+
+
+
 </div>
 
 
@@ -263,53 +268,35 @@
 
 <div class="footer">
 <h4>Copyright © 2022 all rights reserved</h4>
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+ <a  id="myBtn" href="#top">Go To Top </a> 
 </div>
+
+  
+
 </div>
 
 
 
-<!-- button -->
 
-<script>
-   
-    var mybutton = document.getElementById("myBtn");
-    
-    
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-    
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-    </script>
 
 
 
 <!-- navbar -->
 <script>
-    window.onscroll = function() {myFunction()};
-      
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-      
-    function myFunction() {
-    if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-    } else {
-    navbar.classList.remove("sticky");
-    }
-    }
-    </script>
+  window.onscroll = function() {myFunction()};
     
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+    
+  function myFunction() {
+  if (window.pageYOffset >= sticky) {
+  navbar.classList.add("sticky")
+  } else {
+  navbar.classList.remove("sticky");
+  }
+  }
+  </script>
+  
 
 
 
